@@ -9,7 +9,6 @@ import style from "./../AddOrder.module.css";
 const maxLenght7 = maxLengthCreator(7);
 const maxLenght15 = maxLengthCreator(15);
 const maxLenght20 = maxLengthCreator(20);
-const maxLenght150 = maxLengthCreator(150);
 
 function AddOrderForm(props) {
 

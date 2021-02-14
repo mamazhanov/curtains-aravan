@@ -1,0 +1,23 @@
+.orders {
+}
+
+.orderHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 80px;
+  background: white;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.2) 0.001px solid;
+}
+.orderHeader button {
+  padding: 15px 25px;
+  background-color: teal;
+  color: white;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}

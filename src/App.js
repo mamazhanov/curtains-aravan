@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route } from 'react-router-dom';
 import './App.css';
+import AddOrder from './components/AddOrder/AddOrder';
+import AddRetail from './components/AddRetail/AddRetail';
+import Header from './components/Header/Header';
+import OrdersContainer from './components/Orders/OrdersContainer';
+import RetailsContainer from './components/Retails/RetailsContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+
+      <div className="wrapper-content">
+        <Route path='/orders'
+          render={() => <OrdersContainer />} />
+        <Route path='/retails'
+          render={() => <RetailsContainer />} />
+
+        <Route path='/add-retail'
+          render={() => <AddRetail />} />
+        <Route path='/add-order'
+          render={() => <AddOrder />} />
+
+      </div>
+
     </div>
   );
 }

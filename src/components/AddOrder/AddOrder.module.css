@@ -1,0 +1,62 @@
+.AddOrder {
+  padding: 0 30px;
+  background: white;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.2) 0.001px solid;
+  font-size: 20px;
+  line-height: 40px;
+}
+.heading {
+  text-align: center;
+}
+
+.body {
+  padding: 5px 0;
+  display: block;
+  align-items: baseline;
+  justify-content: center;
+}
+.miniBody {
+  padding: 25px 0;
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  border-top: 1px solid teal;
+}
+
+.body .allTags {
+  width: 45%;
+  text-align: left;
+}
+
+.body input {
+  font-size: 20px;
+  width: 200px;
+}
+
+.formBotton button {
+  font-size: 20px;
+  padding: 15px 25px;
+  background: teal;
+  color: aliceblue;
+  border-radius: 50px;
+  margin-right: 50px;
+  font-weight: bold;
+  font-family: 'Montserrat Alternates', sans-serif;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.formBotton {
+  border-top: 1px solid teal;
+  padding: 20px 0;
+  width: 100%;
+  text-align: right;
+}
+
+.coment {
+  font-size: 20px;
+  padding: 7px;
+  outline: none;
+  border-radius: 15px;
+}

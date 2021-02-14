@@ -1,0 +1,38 @@
+.retails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+  background: white;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.2) 0.001px solid;
+}
+.retails button {
+  padding: 15px 25px;
+  background-color: teal;
+  color: white;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.retailElement {
+  padding: 20px 30px;
+  margin-top: 5px;
+  background-color: white;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.2) 0.001px solid;
+  text-align: left;
+}
+.reElem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span.time {
+  font-size: 16px;
+}

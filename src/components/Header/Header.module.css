@@ -1,0 +1,44 @@
+.header {
+  margin: 5px 0;
+  width: 100%;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.2) 0.001px solid;
+}
+
+strong {
+  margin-left: 10px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  color: black;
+  font-weight: 900;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.links .activeLink {
+  color: white;
+  font-weight: bold;
+  background-color: #dc143c;
+  border-radius: 50px;
+}
+.link {
+  padding: 10px;
+}
+
+.link:hover {
+  /* padding: 10px; */
+  border-radius: 50px;
+  border: #dc143c 1px solid;
+  /* font-weight: bold; */
+}

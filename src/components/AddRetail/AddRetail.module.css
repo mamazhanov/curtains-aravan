@@ -1,0 +1,36 @@
+.AddRetail {
+  padding: 0 30px;
+  background: white;
+  border-radius: 5px;
+  border: rgba(0, 0, 0, 0.2) 0.001px solid;
+  font-size: 25px;
+}
+.h2 {
+  text-align: center;
+  border-bottom: tomato 1px solid;
+}
+.add {
+  width: 100%;
+  margin: 5rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+select,
+input,
+button {
+  font-size: 20px;
+  padding: 10px 17px;
+  border: 1px gray solid;
+  border-radius: 50px;
+  outline: none;
+}
+label {
+  font-size: 1.3rem;
+}
+button {
+  /* margin-top: 20px; */
+  width: 100%;
+  cursor: pointer;
+  background-color: #f0e68c;
+}

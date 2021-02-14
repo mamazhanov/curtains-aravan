@@ -33,6 +33,58 @@
   justify-content: space-between;
 }
 
+.comentBlock {
+  margin: 15px 0;
+}
+
 span.time {
   font-size: 16px;
+}
+
+@media (max-width: 960px) {
+  .retails h1 {
+    font-size: 30px;
+  }
+  .retails button {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+  }
+  .retails a {
+    text-decoration: none;
+  }
+
+  .retailElement {
+    padding: 15px;
+  }
+  .reElem {
+    display: block;
+  }
+  .dataTime {
+    text-align: right;
+  }
+}
+
+@media (max-width: 787px) {
+  .retails h1 {
+    font-size: 25px;
+  }
+  .retails button {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+  }
+  .retails a {
+    text-decoration: none;
+  }
+
+  .retailElement {
+    padding: 15px;
+  }
+  .reElem {
+    display: block;
+  }
+  .dataTime {
+    text-align: right;
+  }
 }

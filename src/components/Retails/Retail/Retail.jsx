@@ -8,10 +8,10 @@ const Retail = (props) => {
         <div className={s.retailElement}>
 
             <div style={{ marginBottom: '10px' }}>№ {props.state.id}</div>
-            <br />
-            <div>
+
+            <div className={s.comentBlock}>
                 {props.state.coment}
-            </div><br />
+            </div>
 
             <div className={s.reElem}>
 
@@ -22,7 +22,7 @@ const Retail = (props) => {
                         <th>{props.state.sum + " "} сом</th>
                     </tr>
                 </table>
-                <div>
+                <div className={s.dataTime}>
                     <span className={s.time}>
                         {props.state.time + " "}
                     </span>

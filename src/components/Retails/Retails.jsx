@@ -16,7 +16,7 @@ function Retails(props) {
             <div className={s.retails}>
                 <h1>Розничные продажи:</h1>
                 <NavLink to="/add-retail">
-                    <button><i class="fa fa-plus" aria-hidden="true"></i> Добавить</button>
+                    <button><i className="fa fa-plus" aria-hidden="true"></i> Добавить</button>
                 </NavLink>
             </div>
             {retailElements}

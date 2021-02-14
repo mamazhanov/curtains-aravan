@@ -40,7 +40,6 @@
   background: teal;
   color: aliceblue;
   border-radius: 50px;
-  margin-right: 50px;
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
   border: none;
@@ -59,4 +58,65 @@
   padding: 7px;
   outline: none;
   border-radius: 15px;
+}
+
+@media (max-width: 960px) {
+  .body .allTags {
+    width: 100%;
+  }
+
+  .body input {
+    width: 150px;
+  }
+}
+
+@media (max-width: 787px) {
+  .AddOrder {
+    padding: 0 15px;
+    line-height: 30px;
+  }
+  .body {
+    padding: 5px;
+    display: block;
+  }
+  .miniBody {
+    padding: 15px 0;
+    display: block;
+  }
+
+  .body .allTags {
+    width: 100%;
+  }
+
+  .body input {
+    font-size: 20px;
+    width: 200px;
+  }
+
+  .formBotton button {
+    font-size: 20px;
+    padding: 15px 25px;
+    background: teal;
+    color: aliceblue;
+    border-radius: 50px;
+    /* margin-right: 50px; */
+    font-weight: bold;
+    font-family: 'Montserrat Alternates', sans-serif;
+    border: none;
+    cursor: pointer;
+    outline: none;
+  }
+  .formBotton {
+    border-top: 1px solid teal;
+    padding: 20px 0;
+    width: 100%;
+    text-align: right;
+  }
+
+  .coment {
+    font-size: 20px;
+    padding: 7px;
+    outline: none;
+    border-radius: 15px;
+  }
 }

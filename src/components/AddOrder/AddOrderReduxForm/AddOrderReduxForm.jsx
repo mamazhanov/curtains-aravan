@@ -12,7 +12,7 @@ const maxLenght20 = maxLengthCreator(20);
 const maxLenght150 = maxLengthCreator(150);
 
 function AddOrderForm(props) {
-    debugger
+
     return (
         <div>
             <form onSubmit={props.handleSubmit}>
@@ -57,7 +57,7 @@ function AddOrderForm(props) {
                                 <th><Field component={Input} name={"babon"} type="number" /></th>
                             </tr>
                             <tr>
-                                <th>держатель:</th>
+                                <th>дер-ль:</th>
                                 <th><Field component={Input} name={"derzh"} type="number" /></th>
                             </tr>
                             <tr>
@@ -90,9 +90,9 @@ function AddOrderForm(props) {
 
                 <div className={style.miniBody}>
                     <div className={style.allTags}>
+                        <span style={{ borderBottom: 'gray 1px solid', marginBottom: "50px" }}>Клиент</span>
 
                         <table>
-                            <span style={{ borderBottom: 'gray 1px solid' }}>Клиент</span>
                             <tr>
                                 <th>имя:</th>
                                 <th><Field component={Input} name={"clientName"}
@@ -120,7 +120,7 @@ function AddOrderForm(props) {
                     <div className={style.allTags}>
 
                         коментарии:<Field component={Textarea} name={"coment"} className={style.coment}
-                            validate={[required, maxLenght150]} type="text" />
+                            type="text" />
                     </div>
 
                 </div>

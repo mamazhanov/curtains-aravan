@@ -21,3 +21,27 @@
   font-weight: 900;
   cursor: pointer;
 }
+
+@media (max-width: 960px) {
+  .orderHeader {
+    padding: 0 20px;
+  }
+  .orderHeader h1 {
+    font-size: 30px;
+  }
+  .orderHeader button {
+    padding: 15px;
+  }
+}
+
+@media (max-width: 787px) {
+  .orderHeader {
+    padding: 0 20px;
+  }
+  .orderHeader h1 {
+    font-size: 30px;
+  }
+  .orderHeader button {
+    padding: 15px;
+  }
+}

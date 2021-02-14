@@ -28,7 +28,7 @@ function Order(props) {
             <div className={s.orderHeader}>Заказ №{props.allInfo.id}</div>
             <div className={s.orderBody}>
                 <div >
-                    <div>Клиент</div>
+                    <div>Клиент:</div>
                     <div className={s.klient}>
                         Имя: <u>{client.name}</u><br />
                         Тел: <u>{client.number}</u> <br />
@@ -36,34 +36,39 @@ function Order(props) {
                     </div>
                 </div>
                 <div>
-                    {catalog.tule ? <div>тюль: <span>{catalog.tule}</span></div> : ''}
-                    {catalog.product ? <div> товар: <span>{catalog.product}</span></div> : ''}
-                    {catalog.corset ? <div>корсет: <span>{catalog.corset}</span></div> : ''}
-                    {catalog.ring ? <div>кольцо: <span>{catalog.ring}</span></div> : ''}
-                    {catalog.stone ? <div>камень: <span>{catalog.stone}</span></div> : ''}
-                    {catalog.sewing ? <div>шитье: <span>{catalog.sewing}</span></div> : ''}
-                    {catalog.cut ? <div>настой: <span>{catalog.cut}</span></div> : ''}
-                </div>
+                    Товары:
+                    <div className={s.clientProducts}>
+                        <div>
+                            {catalog.tule ? <div>тюль: <span>{catalog.tule}</span></div> : ''}
+                            {catalog.product ? <div> товар: <span>{catalog.product}</span></div> : ''}
+                            {catalog.corset ? <div>корсет: <span>{catalog.corset}</span></div> : ''}
+                            {catalog.ring ? <div>кольцо: <span>{catalog.ring}</span></div> : ''}
+                            {catalog.stone ? <div>камень: <span>{catalog.stone}</span></div> : ''}
+                            {catalog.sewing ? <div>шитье: <span>{catalog.sewing}</span></div> : ''}
+                            {catalog.cut ? <div>настой: <span>{catalog.cut}</span></div> : ''}
+                        </div>
 
-                <div>
-                    {aCatalog.babon ? <div>бабон: <span>{aCatalog.babon}</span></div> : ''}
-                    {aCatalog.derzh ? <div>держатель: <span>{aCatalog.derzh}</span></div> : ''}
-                    {aCatalog.magnit ? <div>магнит: <span>{aCatalog.magnit}</span></div> : ''}
-                    {aCatalog.corsazh ? <div>карсаж: <span>{aCatalog.corsazh}</span></div> : ''}
-                    {aCatalog.corniz ? <div>корниз: <span>{aCatalog.corniz}</span></div> : ''}
-                    {aCatalog.ozhor ? <div>ажор: <span>{aCatalog.ozhor}</span></div> : ''}
-                    {aCatalog.popik ? <div>попик: <span>{aCatalog.popik}</span></div> : ''}
-                    {aCatalog.sosulka ? <div>сосулка: <span>{aCatalog.sosulka}</span></div> : ''}
+                        <div style={{ marginLeft: "10px", paddingLeft: "10px", borderLeft: "1px gray solid" }}>
+                            {aCatalog.babon ? <div>бабон: <span>{aCatalog.babon}</span></div> : ''}
+                            {aCatalog.derzh ? <div>держатель: <span>{aCatalog.derzh}</span></div> : ''}
+                            {aCatalog.magnit ? <div>магнит: <span>{aCatalog.magnit}</span></div> : ''}
+                            {aCatalog.corsazh ? <div>карсаж: <span>{aCatalog.corsazh}</span></div> : ''}
+                            {aCatalog.corniz ? <div>корниз: <span>{aCatalog.corniz}</span></div> : ''}
+                            {aCatalog.ozhor ? <div>ажор: <span>{aCatalog.ozhor}</span></div> : ''}
+                            {aCatalog.popik ? <div>попик: <span>{aCatalog.popik}</span></div> : ''}
+                            {aCatalog.sosulka ? <div>сосулка: <span>{aCatalog.sosulka}</span></div> : ''}
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className={s.coment}>
                 {props.allInfo.coment}
             </div>
             <div className={s.orderFooter}>
-                <div>
+                <div className={s.smalStyles}>
                     Общая сумма: <span>{arraySum(sum)}</span>
                 </div>
-                <div>
+                <div className={s.smalStyles}>
                     Заклад: {props.allInfo.mortgage}
                 </div>
                 <div>
